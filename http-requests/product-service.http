@@ -1,0 +1,9 @@
+GET https://r869naaek3.execute-api.eu-west-1.amazonaws.com/products/7567ec4b-b10c-48c5-9345-fc73c48a80aa
+Accept: application/json
+Content-Type: application/json
+###
+
+GET https://r869naaek3.execute-api.eu-west-1.amazonaws.com/products
+Content-Type: application/json
+Accept: application/json
+###
