@@ -1,0 +1,32 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "npm run eslint:fix && npm run test && sls deploy",
+    "test": "jest",
+    "eslint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@serverless/eslint-config": "^4.0.0",
+    "@serverless/event-mocks": "^1.1.1",
+    "eslint": "^8.6.0",
+    "eslint-plugin-import": "^2.25.4",
+    "git-list-updated": "^1.2.1",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "serverless": "^2.69.1",
+    "serverless-openapi-documentation": "^0.4.0"
+  },
+  "eslintConfig": {
+    "extends": "@serverless/eslint-config/node",
+    "root": true,
+    "ignorePatterns": [
+      "**/test-utils/*.js"
+    ]
+  }
+}
